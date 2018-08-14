@@ -11,7 +11,8 @@ def reformat_languages(languages)
           :style => [style],
           :type => languages[style][language_key][:type]}
       else
-        
+        new_hash[language_key][:style] << style 
+      end 
       
     end
   end 
