@@ -4,9 +4,11 @@ def reformat_languages(languages)
   
   new_hash = {}
   
-  languages.each do |style, language|
+  languages.each do |style, language_hash|
+    style.each do |language_key, type|
     new_hash[language] = {
-      :style => [style], 
+      :style => [style],
+      :type => languages[style][language][]
   
   
 end
