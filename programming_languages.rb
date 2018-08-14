@@ -10,8 +10,8 @@ def reformat_languages(languages)
       #   :style => [style],
       #   :type => languages[style][language_key][:type]}
       
-      new_hash[language_key] << {:style => [style]}
-      new_hash[language_key] << {:type => languages[style][language_key][:type]}
+      new_hash[language_key] << :style => [style]
+      new_hash[language_key] << :type => languages[style][language_key][:type]
       
     end
   end 
